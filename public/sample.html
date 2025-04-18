@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex flex-col justify-between rounded-xl bg-white w-[300px] h-[370px] shadow-md">
+        <div class="relative mt-6 mx-4 rounded-xl bg-blue-500 shadow-lg h-56"></div>
+    
+        <div class="border-0 p-6 text-center">
+            <h2 class="text-slate-800 tracking-normal leading-snug font-semibold text-xl mb-2">
+                {{ $author->Title }}
+            </h2>
+            <span class="font-light text-xs block">by {{ $author->name }}</span>
+        </div>
+    
+        <div class="p-3 border border-slate-200 flex items-center justify-between bg-blue-100/20">
+            <span class="font-light text-xs block">Abstract</span>
+            <a href="{{ route('author.views', $author->id) }}" 
+               class="select-none border-0 outline-none shadow-md text-white uppercase font-bold text-xs px-6 py-3 bg-blue-500 rounded-lg">
+                View
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>
