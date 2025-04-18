@@ -38,7 +38,7 @@
     <!-- Nav Links -->
     <nav class="mt-4">
         <x-side-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-            dashboard
+            Dashboard
         </x-side-nav-link>
         <x-side-nav-link href="{{ route('module1') }}" :active="request()->routeIs('module1')">
             Research Projects Management 
